@@ -17,6 +17,7 @@
   --modal-btn-color: rgba(0, 0, 0, 0.1);
   --action-thumb-color: rgba(47, 48, 58, 0.8);
   --portfolio-card-bg-color: rgba(33, 150, 243, 0.9);
+  --footer-border-color: rgba(255, 255, 255, 0.3);
 
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -229,7 +230,7 @@ img {
 /* Button */
 .button-primary {
   border-radius: 4px;
-  padding: 10px 24px;
+  padding: 10px 32px;
 
   box-shadow: var(--primary-btn-shadow);
   border: transparent;
@@ -578,6 +579,24 @@ img {
 }
 
 .join-list .footer-item + .footer-item {
+  margin-left: 10px;
+}
+
+.footer-form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.follow.button-primary {
+  display: flex;
+  align-items: center;
+  padding: 10px 28px;
+  margin-left: 12px;
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
   margin-left: 10px;
 }
 
