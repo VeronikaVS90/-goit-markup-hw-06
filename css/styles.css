@@ -18,6 +18,7 @@
   --action-thumb-color: rgba(47, 48, 58, 0.8);
   --portfolio-card-bg-color: rgba(33, 150, 243, 0.9);
   --footer-border-color: rgba(255, 255, 255, 0.3);
+  --footer-input-color: rgba(255, 255, 255, 0.6);
 
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -479,11 +480,11 @@ img {
 
 .common.container {
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-container {
   flex-direction: column;
-  margin-right: 70px;
 }
 
 .address-nav .item + .item {
@@ -585,6 +586,22 @@ img {
 .footer-form {
   display: flex;
   margin-top: 20px;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  background-color: var(--footer-bg-color);
+  border: 1px solid var(--footer-border-color);
+  border-radius: 4px;
+  padding-left: 16px;
+}
+
+.footer-field input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--footer-input-color);
 }
 
 .follow.button-primary {
