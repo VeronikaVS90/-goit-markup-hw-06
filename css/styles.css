@@ -794,12 +794,13 @@ img {
 
 .backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
+/* .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
-}
+} */
 
 .modal {
   /* position: absolute;
@@ -871,7 +872,7 @@ img {
 }
 
 /* Modal-form */
-.form-field.label {
+.form-field-label {
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
