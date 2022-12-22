@@ -798,34 +798,23 @@ img {
   pointer-events: none;
 }
 
-/* .backdrop.is-hidden .modal {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
-} */
-
-.modal {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1); */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 0;
-  height: 100%;
 }
 
-.modal-container {
-  position: relative;
-  width: 100%;
-  max-width: 528px;
-  height: 100%;
-  max-height: 581px;
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  min-width: 528px;
+  min-height: 581px;
   padding: 40px;
 
   background-color: var(--white-color);
   box-shadow: var(--modal-shadow);
   border-radius: 4px;
-  overflow-y: auto;
 
   transition: transform 250ms var(--timing-function);
 }
